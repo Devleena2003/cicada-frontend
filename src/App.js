@@ -61,9 +61,9 @@ function App() {
         <h1 className="Scoreboard">Scoreboard</h1>
         <Bar
           style={{ margin: "5em", width: "50vw" }}
+          options={options}
           data={{
             labels: users.map((user) => user.name),
-
             datasets: [
               {
                 label: "Score",
