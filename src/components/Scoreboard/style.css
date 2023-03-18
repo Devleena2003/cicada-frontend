@@ -3,13 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   font-family: "Source Code Pro", monospace;
   letter-spacing: 3px;
 }
+
 .header {
   display: flex;
-  gap: 7em;
+  gap: 5em;
   color: #fff;
 }
 .header h1 {
@@ -19,7 +20,7 @@
 .bg-img {
   background-image: url("../../assets/pikrepo.png");
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -31,16 +32,20 @@
 
 .board {
   position: absolute;
-  top: 53%;
+  top: 100%;
   left: 50%;
   z-index: 30;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
   max-width: 100%;
+  min-height: 100%;
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 20px 20px 60px #000;
   cursor: pointer;
+}
+.profiles {
+  height: 100%;
 }
 
 .Scoreboard {

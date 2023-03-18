@@ -16,7 +16,7 @@ const Scoreboard = () => {
   }, [])
 
   return (
-    <div>
+    <div className="container">
       <div className="bg-img"></div>
       <h1 className='Scoreboard'>Scoreboard</h1>
      <div className='board'>
@@ -36,7 +36,7 @@ const Scoreboard = () => {
           <div>
               <Profiles user={user} />
         
-        <div className='border'></div>
+       
         </div>
         
        ) })}
